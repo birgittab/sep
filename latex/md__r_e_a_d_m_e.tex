@@ -1,0 +1,68 @@
+{\itshape Spiritual successor to the backend of \href{https://github.com/ItJustWorksTM/SmartcarEmul}{\texttt{ SMart\+Car\+Emul}}} ~\newline
+ {\itshape Copyright © It\+Just\+Works™}
+
+ \href{https://codecov.io/gh/ItJustWorksTM/libSMCE}{\texttt{ }}
+
+Status\+: {\itshape Actively maintained}
+
+This cross-\/platform C++ library provides its consumers the ability to compile and execute Arduino sketches on a hosted environment, with bindings to its virtual I/O ports to allow the host application to interact with its child sketches.
+
+Check our \href{https://github.com/ItJustWorksTM/libSMCE/wiki}{\texttt{ Wiki}} for more information about usage.\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysubsubsection{Supported I/O}\label{md__r_e_a_d_m_e_autotoc_md17}
+
+\begin{DoxyItemize}
+\item GPIO (Arduino\textquotesingle{}s {\ttfamily digital\+Read}, {\ttfamily analog\+Write}, etc)
+\item UART (Arduino\textquotesingle{}s {\ttfamily Serial} global)
+\item SD
+\item MQTT (interface of \href{https://github.com/256dpi/arduino-mqtt}{\texttt{ arduino-\/mqtt}}) -\/ Note\+: cannot be monitored by host application
+\item OV767X Camera (interface of \href{https://github.com/arduino-libraries/Arduino_OV767X}{\texttt{ Arduino\+\_\+\+OV767X}}) -\/ Note\+: available pixel formats differ
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysubsection{Build Requirements}\label{md__r_e_a_d_m_e_autotoc_md18}
+
+\begin{DoxyItemize}
+\item \href{https://www.kitware.com/cmake}{\texttt{ CMake}} \texorpdfstring{$>$}{>}= 3.\+16
+\item C++20 compiler (tested with \href{https://gcc.gnu.org}{\texttt{ GCC}} \texorpdfstring{$>$}{>}= 10, \href{https://clang.llvm.org}{\texttt{ Clang/\+LLVM}} \texorpdfstring{$>$}{>}= 10, MSVC \texorpdfstring{$>$}{>}= 19.\+28, Apple\+Clang)
+\item \href{https://www.boost.org}{\texttt{ Boost}} \texorpdfstring{$>$}{>}= 1.\+74 -\/ Not an interface requirement however (you only need Boost headers to build the library, not when using it precompiled)
+\item \href{https://www.openssl.org}{\texttt{ Open\+SSL}} (tested with 1.\+1.\+1)
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsubsection{Automatically built from source}\label{md__r_e_a_d_m_e_autotoc_md19}
+
+\begin{DoxyItemize}
+\item \href{https://mosquitto.org/api}{\texttt{ libmosquitto}} 2.\+0.\+9 -\/ Used for providing MQTT support
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysubsection{Runtime Requirements}\label{md__r_e_a_d_m_e_autotoc_md20}
+
+\begin{DoxyItemize}
+\item \href{https://www.kitware.com/cmake}{\texttt{ CMake}} \texorpdfstring{$>$}{>}= 3.\+12
+\item C++ compiler with support for at least C++11 -\/ Min\+GW and MSVC-\/\+Wine are NOT officially supported
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsubsection{Optional}\label{md__r_e_a_d_m_e_autotoc_md21}
+
+\begin{DoxyItemize}
+\item \href{https://ninja-build.org}{\texttt{ Ninja}} -\/ On Un$\ast$x, will be used by setting {\ttfamily CMAKE\+\_\+\+GENERATOR} (if that environment variable is unset)
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysubsection{Build instructions}\label{md__r_e_a_d_m_e_autotoc_md22}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake -\/S . -\/B build}
+\DoxyCodeLine{cd build}
+\DoxyCodeLine{cmake -\/-\/build .}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysubsubsection{Running the testsuite}\label{md__r_e_a_d_m_e_autotoc_md23}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctest}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md24}{}\doxysubsubsection{Packaging}\label{md__r_e_a_d_m_e_autotoc_md24}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cpack}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md25}{}\doxysubsection{Future development}\label{md__r_e_a_d_m_e_autotoc_md25}
+
+\begin{DoxyItemize}
+\item Serve the Doxygen-\/generated docs
+\item Making a proper \href{https://gohugo.io}{\texttt{ Hugo}}-\/generated wiki in Markdown
+\item {\ttfamily std\+::error\+\_\+code}ify {\ttfamily smce\+::\+Board}
+\item Removal of the strong dependency on Arduino\+CLI (preprocess ourselves)
+\item Add more I/O features, in particular the ones that were in \href{https://github.com/ItJustWorksTM/SmartcarEmul}{\texttt{ SMart\+Car\+Emul}}
+\item Add interrupts support
+\item Allow consumers to specify toolchain files 
+\end{DoxyItemize}

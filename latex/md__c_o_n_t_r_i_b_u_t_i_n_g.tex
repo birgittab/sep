@@ -1,0 +1,38 @@
+While this project is mainly maintained by \href{https://github.com/AeroStun}{\texttt{ @\+Aero\+Stun}}, external contributions are more than welcome.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md1}{}\doxysection{What to contribute}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md1}
+lib\+SMCE is still in its early life, so bugfixes, new features, support for more platforms, user and developer documentation, as well as more tests, are all good ways to contribute to SMCE.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md2}{}\doxysection{Who can contribute}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md2}
+Anyone willing to! Just beware that all contributions to this project are under the It\+Just\+Works™ copyright attribution, and the Apache 2.\+0 license.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md3}{}\doxysection{How to contribute}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md3}
+\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md4}{}\doxysubsection{0. Check issues}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md4}
+Start by looking at the \href{https://github.com/ItJustWorksTM/libSMCE/issues}{\texttt{ issues page}}, either to get ideas on what to do, or check whether someone else is already working on your idea.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md5}{}\doxysubsection{1. Check discussions}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md5}
+Next, look at the \href{https://github.com/ItJustWorksTM/libSMCE/discussions/categories/ideas}{\texttt{ ideas category in the discussions page}}. There you can see if someone has already proposed your idea and what feedback they got. If nobody ever suggested that idea of yours, open a thread, and tell us everything about it! We will happily give you feedback regarding the usefulness and feasibility of your idea, as well as tips for getting started on it.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md6}{}\doxysubsection{2. Fork the repo}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md6}
+This is to avoid cluttering the upstream lib\+SMCE repository with user branches. It also allows you to experiment with different automation services.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md7}{}\doxysubsubsection{2.\+x Enable Git\+Hub Actions}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md7}
+Would not want to miss a test failure caused by your patch, would you?\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md8}{}\doxysubsection{3. Work on your own feature branches}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md8}
+i.\+e., do not work on {\ttfamily master} or {\ttfamily devel}, else you might have trouble updating your fork when upstream gets new commits.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md9}{}\doxysubsection{4. Open a draft $<$a href=\char`\"{}https\+://github.\+com/\+It\+Just\+Works\+TM/lib\+SMCE/pulls\char`\"{} $>$\+Pull Request$<$/a$>$ against $<$tt$>$devel$<$/tt$>$ on upstream}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md9}
+This is so everyone can easily follow your progress, and for you to ask us questions while citing your changes on our CI runs of your PR.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md10}{}\doxysubsection{5. Request a review from @\+Aero\+Stun}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md10}
+Once your PR is passing CI and you are satisfied with your patches, requesting a review from the maintainer will get you another look at your changes, and point out visible issues. ~\newline
+ Expect to be asked along the lines of\+:
+\begin{DoxyItemize}
+\item Reformat code with Clang\+Format
+\item Fix typos
+\item Rebase on upstream {\ttfamily devel}
+\item Squash commits
+\item Deduplicate code/text
+\item Add tests for your newly added features
+\item Document said features
+\item Explain technical choices
+\item Use more modern techniques
+\end{DoxyItemize}
+
+We may ask many more things, so expect anything, yet fear not, for we will guide you if you ask.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md11}{}\doxysubsection{6. Address the review comments}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md11}
+... and go back to \href{\#5-request-a-review-from-aerostun}{\texttt{ \mbox{[}5\mbox{]}}}, until you get an approval (e.\+g., \char`\"{}\+LGTM\char`\"{} (Looks Good To Me)).\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md12}{}\doxysubsection{7. Enjoy the satisfaction of contributing to the world!}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md12}
+And your features too -\/ we are certain that you will make great use of them.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md13}{}\doxysection{FAQ}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md13}
+\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md14}{}\doxysubsection{Q\+: Can I add dependencies?}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md14}
+A\+: Generally no, but it depends. Always ask us about that.\hypertarget{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md15}{}\doxysubsection{Q\+: Do you have a wishlist?}\label{md__c_o_n_t_r_i_b_u_t_i_n_g_autotoc_md15}
+A\+: Not really, but here\textquotesingle{}s one anyway\+:
+\begin{DoxyItemize}
+\item Better test coverage
+\item Doxygen-\/generated user \& developer documentation
+\item Clang-\/cl support (add to Windows CI matrix)
+\item Free\+BSD support (CPack packaging \& CI setup)
+\item More samples (small example projects to demonstrate features)
+\item Support for more Arduino libraries 
+\end{DoxyItemize}

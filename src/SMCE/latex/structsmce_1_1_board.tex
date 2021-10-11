@@ -1,0 +1,97 @@
+\hypertarget{structsmce_1_1_board}{}\doxysection{smce\+::Board Struct Reference}
+\label{structsmce_1_1_board}\index{smce::Board@{smce::Board}}
+
+
+Inheritance diagram for smce\+::Board\+:
+% FIG 0
+
+
+Collaboration diagram for smce\+::Board\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69a}{Command}} \{ \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaa53108f7543b75adbb34afc035d4cdf6}{run}}
+, \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaef399b2d446bb37b7c32ad2cc1b6045b}{stop}}
+, \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa497927fb538c4a1572d3b3a98313cab1}{suspend}}
+, \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa87649b14ea2ec667ede08bc85903df29}{stop\+\_\+ack}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Uuid \mbox{\hyperlink{structsmce_1_1_board_aab2fa27bb7659f75fe7ce09e60b888da}{uuid}} = Uuid\+::generate()
+\item 
+Shared\+Board\+Data \mbox{\hyperlink{structsmce_1_1_board_a9f414bf6cce0121986aeb3f855f243ad}{sbdata}}
+\item 
+bp\+::child \mbox{\hyperlink{structsmce_1_1_board_a8b8081286f6e85e2e9dcd10c8b4b1f7d}{sketch}}
+\item 
+bp\+::ipstream \mbox{\hyperlink{structsmce_1_1_board_a64c8ae0b5454d41d185c7f6c53eb9d2f}{sketch\+\_\+log}}
+\item 
+std\+::thread \mbox{\hyperlink{structsmce_1_1_board_ab8095ba0614e04ee5e720c247fc6bd84}{sketch\+\_\+log\+\_\+grabber}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69a}\label{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69a}} 
+\index{smce::Board@{smce::Board}!Command@{Command}}
+\index{Command@{Command}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{Command}{Command}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69a}{smce\+::\+Board\+::\+Command}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{run@{run}!smce::Board@{smce::Board}}\index{smce::Board@{smce::Board}!run@{run}}}\mbox{\Hypertarget{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaa53108f7543b75adbb34afc035d4cdf6}\label{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaa53108f7543b75adbb34afc035d4cdf6}} 
+run&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stop@{stop}!smce::Board@{smce::Board}}\index{smce::Board@{smce::Board}!stop@{stop}}}\mbox{\Hypertarget{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaef399b2d446bb37b7c32ad2cc1b6045b}\label{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aaef399b2d446bb37b7c32ad2cc1b6045b}} 
+stop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{suspend@{suspend}!smce::Board@{smce::Board}}\index{smce::Board@{smce::Board}!suspend@{suspend}}}\mbox{\Hypertarget{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa497927fb538c4a1572d3b3a98313cab1}\label{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa497927fb538c4a1572d3b3a98313cab1}} 
+suspend&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stop\_ack@{stop\_ack}!smce::Board@{smce::Board}}\index{smce::Board@{smce::Board}!stop\_ack@{stop\_ack}}}\mbox{\Hypertarget{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa87649b14ea2ec667ede08bc85903df29}\label{structsmce_1_1_board_ab0d1678f7ea2e88436e892c13a79a69aa87649b14ea2ec667ede08bc85903df29}} 
+stop\+\_\+ack&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structsmce_1_1_board_a9f414bf6cce0121986aeb3f855f243ad}\label{structsmce_1_1_board_a9f414bf6cce0121986aeb3f855f243ad}} 
+\index{smce::Board@{smce::Board}!sbdata@{sbdata}}
+\index{sbdata@{sbdata}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{sbdata}{sbdata}}
+{\footnotesize\ttfamily Shared\+Board\+Data smce\+::\+Board\+::sbdata}
+
+\mbox{\Hypertarget{structsmce_1_1_board_a8b8081286f6e85e2e9dcd10c8b4b1f7d}\label{structsmce_1_1_board_a8b8081286f6e85e2e9dcd10c8b4b1f7d}} 
+\index{smce::Board@{smce::Board}!sketch@{sketch}}
+\index{sketch@{sketch}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{sketch}{sketch}}
+{\footnotesize\ttfamily bp\+::child smce\+::\+Board\+::sketch}
+
+\mbox{\Hypertarget{structsmce_1_1_board_a64c8ae0b5454d41d185c7f6c53eb9d2f}\label{structsmce_1_1_board_a64c8ae0b5454d41d185c7f6c53eb9d2f}} 
+\index{smce::Board@{smce::Board}!sketch\_log@{sketch\_log}}
+\index{sketch\_log@{sketch\_log}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{sketch\_log}{sketch\_log}}
+{\footnotesize\ttfamily bp\+::ipstream smce\+::\+Board\+::sketch\+\_\+log}
+
+\mbox{\Hypertarget{structsmce_1_1_board_ab8095ba0614e04ee5e720c247fc6bd84}\label{structsmce_1_1_board_ab8095ba0614e04ee5e720c247fc6bd84}} 
+\index{smce::Board@{smce::Board}!sketch\_log\_grabber@{sketch\_log\_grabber}}
+\index{sketch\_log\_grabber@{sketch\_log\_grabber}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{sketch\_log\_grabber}{sketch\_log\_grabber}}
+{\footnotesize\ttfamily std\+::thread smce\+::\+Board\+::sketch\+\_\+log\+\_\+grabber}
+
+\mbox{\Hypertarget{structsmce_1_1_board_aab2fa27bb7659f75fe7ce09e60b888da}\label{structsmce_1_1_board_aab2fa27bb7659f75fe7ce09e60b888da}} 
+\index{smce::Board@{smce::Board}!uuid@{uuid}}
+\index{uuid@{uuid}!smce::Board@{smce::Board}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily Uuid smce\+::\+Board\+::uuid = Uuid\+::generate()}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_board_8cpp}{Board.\+cpp}}\end{DoxyCompactItemize}

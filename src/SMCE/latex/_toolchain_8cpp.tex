@@ -1,0 +1,43 @@
+\hypertarget{_toolchain_8cpp}{}\doxysection{Toolchain.\+cpp File Reference}
+\label{_toolchain_8cpp}\index{Toolchain.cpp@{Toolchain.cpp}}
+{\ttfamily \#include $<$SMCE/\+Toolchain.\+hpp$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$system\+\_\+error$>$}\newline
+{\ttfamily \#include $<$boost/predef.\+h$>$}\newline
+{\ttfamily \#include $<$boost/process.\+hpp$>$}\newline
+{\ttfamily \#include $<$SMCE/\+Plugin\+Manifest.\+hpp$>$}\newline
+{\ttfamily \#include $<$SMCE/\+SMCE\+\_\+iface.\+h$>$}\newline
+{\ttfamily \#include $<$SMCE/\+Sketch.\+hpp$>$}\newline
+{\ttfamily \#include $<$SMCE/\+Sketch\+Conf.\+hpp$>$}\newline
+{\ttfamily \#include $<$SMCE/internal/utils.\+hpp$>$}\newline
+Include dependency graph for Toolchain.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstd_1_1is__error__code__enum_3_01smce_1_1toolchain__error_01_4}{std\+::is\+\_\+error\+\_\+code\+\_\+enum$<$ smce\+::toolchain\+\_\+error $>$}}
+\item 
+struct \mbox{\hyperlink{structsmce_1_1detail_1_1toolchain__error__category}{smce\+::detail\+::toolchain\+\_\+error\+\_\+category}}
+\item 
+struct \mbox{\hyperlink{structsmce_1_1_processed_libs}{smce\+::\+Processed\+Libs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestd}{std}}
+\item 
+namespace \mbox{\hyperlink{namespacesmce}{smce}}
+\item 
+namespace \mbox{\hyperlink{namespacesmce_1_1detail}{smce\+::detail}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::error\+\_\+category \& \mbox{\hyperlink{namespacesmce_1_1detail_a5509af5d228f5ec46da7abcf0e0517dd}{smce\+::detail\+::get\+\_\+exec\+\_\+ctx\+\_\+error\+\_\+category}} () noexcept
+\item 
+std\+::error\+\_\+code \mbox{\hyperlink{namespacesmce_a64f0a5f94ed18c97647a3fba398f2149}{smce\+::make\+\_\+error\+\_\+code}} (toolchain\+\_\+error ev)
+\item 
+Processed\+Libs \mbox{\hyperlink{namespacesmce_a5c32c05c8c1887a9486045bb1a29865c}{smce\+::process\+\_\+libraries}} (const Sketch\+Config \&skonf) noexcept
+\item 
+SMCE\+\_\+\+INTERNAL std\+::error\+\_\+code \mbox{\hyperlink{namespacesmce_abb42246debfb53322fa7ff636d70b4e7}{smce\+::write\+\_\+manifests}} (const Sketch\+Config \&skonf, const stdfs\+::path \&tmpdir)
+\end{DoxyCompactItemize}

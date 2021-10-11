@@ -1,0 +1,7 @@
+<map id="smce::BoardView" name="smce::BoardView">
+<area shape="rect" id="node1" title=" " alt="" coords="158,171,282,197"/>
+<area shape="rect" id="node2" href="$classsmce_1_1_virtual_pins.html" title=" " alt="" coords="5,81,131,108"/>
+<area shape="rect" id="node3" href="$classsmce_1_1_virtual_uarts.html" title=" " alt="" coords="155,81,285,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="189,5,251,32"/>
+<area shape="rect" id="node5" href="$classsmce_1_1_frame_buffers.html" title=" " alt="" coords="309,81,448,108"/>
+</map>
